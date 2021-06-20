@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.bookreadingapp.view.BookPageView
+        android:id="@+id/book_page_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/progress_text_view"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:textSize="22sp"
+ />
+
+        <RelativeLayout
+            android:id="@+id/setting_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+            android:background="#88888888">
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:max="100"
+                android:layout_below="@+id/settingRecyclerView"
+                android:layout_centerHorizontal="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/settingRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+    </com.example.bookreadingapp.view.BookPageView>
+
+</LinearLayout>

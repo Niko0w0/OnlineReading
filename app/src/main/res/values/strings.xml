@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BookReadingAPP</string>
+    <string name="book_list_name">书籍列表</string>
+    <string name="click">5秒 点击跳过</string>
+</resources>
